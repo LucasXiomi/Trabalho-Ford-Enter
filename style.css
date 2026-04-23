@@ -1,0 +1,174 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body {
+font-family:'Poppins',sans-serif;
+background:#f4f6fb;
+}
+
+/* HEADER */
+.header {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0b0f2a;
+color:white;
+}
+
+.logo span { color:#7c6cff; }
+
+.menu a {
+margin:0 15px;
+color:#ccc;
+text-decoration:none;
+font-size:14px;
+}
+
+.menu__link:hover {
+
+    background-color: #7c6cff
+    transform: translate(-2px);
+}
+
+.menu__link:active {
+    background-color: #7c6cff;
+}
+
+.menu__link:focus {
+    background-color: #7c6cff;
+}
+.menu__link:visited{
+color:#ccc;
+}
+
+
+.menu a:active { color:white; }
+
+
+.menu a:hover { color:white; }
+
+.icons i {
+margin-left:15px;
+cursor:pointer;
+}
+
+/* BANNER */
+.banner {
+margin:20px 40px;
+padding:50px;
+border-radius:20px;
+background:linear-gradient(135deg,#6c5cff,#a17cff);
+color:white;
+}
+
+.banner h2 { font-size:40px; }
+
+.tags button {
+margin-right:10px;
+padding:6px 12px;
+border:none;
+border-radius:20px;
+background:white;
+cursor:pointer;
+}
+
+/* MAIN */
+main {
+display:flex;
+gap:20px;
+padding:20px 40px;
+}
+
+/* SIDEBAR */
+.sidebar {
+width:250px;
+background:white;
+padding:20px;
+border-radius:15px;
+}
+
+.sidebar h3 { margin:15px 0; }
+
+.sidebar button {
+border:none;
+background:none;
+cursor:pointer;
+text-align:left;
+}
+
+/* PRODUCTS */
+.products { flex:1; }
+
+.grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+/* CARD */
+.card {
+background:white;
+padding:15px;
+border-radius:15px;
+text-align:center;
+position:relative;
+transition:.3s;
+}
+
+.card:hover {
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.card img { width:100%; }
+
+.fav {
+position:absolute;
+top:10px;
+right:10px;
+color:#ccc;
+cursor:pointer;
+}
+
+.price {
+color:#6c5cff;
+font-weight:bold;
+}
+
+/* BENEFITS */
+.benefits {
+display:flex;
+justify-content:space-around;
+margin:20px 40px;
+background:white;
+padding:20px;
+border-radius:15px;
+}
+
+/* FOOTER */
+.footer {
+background:#0b0f2a;
+color:white;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:40px;
+}
+
+/* RESPONSIVO */
+@media(max-width:900px){
+main { flex-direction:column; }
+.grid { grid-template-columns:repeat(2,1fr); }
+}
+
+@media(max-width:600px){
+.grid { grid-template-columns:1fr; }
+.header { flex-direction:column; gap:10px; }
+}
+
+::selection {
+background:#7c6cff;
+color: #890c0c;
